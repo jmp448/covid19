@@ -1,0 +1,20 @@
+---
+title: "Identification of Lung Marker Genes"
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+
+```{r}
+library(Seurat)
+library(ggplot2)
+```
+
+Load the data file
+```{r}
+luk.loc <- "data/lukassen20_lung_orig.processed.h5ad"
+luk <- ReadH5AD(file=luk.loc)
+```
+
